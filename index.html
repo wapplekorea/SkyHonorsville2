@@ -3,263 +3,568 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>대전 경남아너스빌 센텀스카이 | 분양상담 · 방문예약</title>
-<meta name="description" content="대전 경남아너스빌 센텀스카이 공식 분양 홈페이지. 더블역세권, 명문학군. 분양상담 1588-8766">
+<title>대전 경남아너스빌 센텀스카이 2 | 분양상담 · 방문예약</title>
+<meta name="description" content="대전 경남아너스빌 센텀스카이 2. 더블역세권·명문학군·스카이 프리미엄. 분양문의 1588-8766">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{
-  --navy:#0b1f3a;
-  --navy-dark:#060f1e;
-  --gold:#c5a96a;
-  --gold-light:#d4bc8a;
-  --white:#fff;
-  --gray:#888;
-  --ease-out:cubic-bezier(0.16,1,0.3,1);
+:root {
+  --navy: #0d1f35;
+  --navy-mid: #122540;
+  --navy-deep: #07111e;
+  --gold: #b89b5e;
+  --gold-lt: #cdb479;
+  --gold-pale: #f0e6cc;
+  --off-white: #f8f6f1;
+  --gray-100: #f3f1ec;
+  --gray-300: #d5d0c4;
+  --gray-500: #8a8579;
+  --gray-700: #4a4742;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:'Noto Sans KR','Malgun Gothic',sans-serif;background:#fff;color:#222;overflow-x:hidden;}
-a{text-decoration:none;color:inherit;}
-img{max-width:100%;display:block;}
 
-/* NAV */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:70px;background:rgba(6,15,30,.9);backdrop-filter:blur(8px);}
-.nav-logo-text{color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;line-height:1.5;}
-.nav-right{display:flex;align-items:center;gap:24px;}
-.nav-menu{display:flex;gap:4px;}
-.nav-menu a{color:rgba(255,255,255,.65);font-size:12px;font-weight:500;letter-spacing:.06em;padding:6px 10px;transition:color .2s;}
-.nav-menu a:hover{color:var(--gold);}
-.nav-tel{color:var(--gold);font-size:17px;font-weight:900;letter-spacing:.04em;}
-.nav-tel small{font-size:11px;color:rgba(255,255,255,.5);font-weight:400;margin-right:4px;}
-
-/* HERO */
-.hero{position:relative;height:100vh;min-height:600px;background:#060f1e;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background-image:url('https://www.sky-honorsville.co.kr/img/main/main_n4.png');background-size:cover;background-position:center top;}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,15,30,.15) 0%,rgba(6,15,30,.45) 60%,rgba(6,15,30,.88) 100%);}
-.hero-content{position:absolute;bottom:14%;left:50%;transform:translateX(-50%);text-align:center;width:100%;padding:0 24px;}
-.hero-title img{margin:0 auto 20px;max-height:130px;filter:drop-shadow(0 4px 24px rgba(0,0,0,.6));}
-.hero-sub{color:rgba(255,255,255,.72);font-size:15px;letter-spacing:.12em;margin-bottom:36px;}
-.hero-cta{display:inline-block;background:var(--gold);color:var(--navy-dark);font-size:14px;font-weight:900;padding:15px 52px;letter-spacing:.1em;border-radius:2px;transition:background .2s;}
-.hero-cta:hover{background:var(--gold-light);}
-.hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.35);font-size:10px;letter-spacing:.15em;}
-.hero-scroll::after{content:'';display:block;width:1px;height:44px;background:linear-gradient(to bottom,rgba(255,255,255,.35),transparent);margin-top:6px;}
-
-/* SECTION COMMON */
-.sec-label{font-size:11px;letter-spacing:.22em;color:var(--gold);font-weight:700;margin-bottom:14px;text-transform:uppercase;}
-.sec-title{font-size:34px;font-weight:900;line-height:1.3;color:var(--navy-dark);margin-bottom:14px;}
-.sec-title-wh{color:#fff;}
-.sec-divider{width:40px;height:2px;background:var(--gold);margin-bottom:28px;}
-.sec-desc{font-size:14px;color:#666;line-height:1.9;word-break:keep-all;}
-
-/* CONCEPT */
-.concept{background:#fff;padding:110px 48px;}
-.concept-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.concept-heading{font-size:32px;font-weight:900;line-height:1.45;color:var(--navy-dark);margin-bottom:24px;word-break:keep-all;}
-.concept-heading em{color:var(--gold);font-style:normal;}
-.concept-images{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.concept-img{border-radius:3px;overflow:hidden;aspect-ratio:9/14;}
-.concept-img img{width:100%;height:100%;object-fit:cover;}
-
-/* BUSINESS */
-.business{background:#f7f5f1;padding:100px 48px;}
-.business-inner{max-width:1000px;margin:0 auto;}
-.biz-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:48px;}
-.biz-image{border-radius:4px;overflow:hidden;}
-.biz-image img{width:100%;}
-.biz-table{width:100%;border-collapse:collapse;font-size:14px;}
-.biz-table tr{border-bottom:1px solid #e0ddd6;}
-.biz-table th{width:38%;padding:14px 16px;background:#ece9e2;color:#555;font-weight:700;font-size:12px;letter-spacing:.04em;text-align:left;vertical-align:top;}
-.biz-table td{padding:14px 16px;color:#333;line-height:1.7;vertical-align:top;}
-
-/* LOCATION */
-.location{background:var(--navy-dark);padding:0;position:relative;overflow:hidden;}
-.loc-tabs{display:flex;border-bottom:1px solid rgba(255,255,255,.1);}
-.loc-tab{flex:1;padding:22px 0;text-align:center;color:rgba(255,255,255,.4);font-size:12px;font-weight:700;letter-spacing:.12em;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;text-transform:uppercase;}
-.loc-tab.active{color:var(--gold);border-bottom-color:var(--gold);}
-.loc-slide{display:none;position:relative;height:580px;}
-.loc-slide.active{display:block;}
-.loc-slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;}
-.loc-slide-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,15,30,.88) 0%,rgba(6,15,30,.45) 55%,transparent 100%);}
-.loc-slide-content{position:absolute;top:50%;left:10%;transform:translateY(-50%);color:#fff;max-width:420px;}
-.loc-slide-en{font-size:10px;letter-spacing:.22em;color:var(--gold);font-weight:700;margin-bottom:14px;}
-.loc-slide-heading{font-size:34px;font-weight:900;line-height:1.3;margin-bottom:18px;word-break:keep-all;}
-.loc-slide-desc{font-size:14px;color:rgba(255,255,255,.72);line-height:2;}
-.loc-notice{background:rgba(255,255,255,.03);padding:14px 48px;color:rgba(255,255,255,.25);font-size:11px;text-align:center;line-height:2;}
-
-/* PREMIUM */
-.premium{background:#fff;padding:100px 48px;}
-.premium-inner{max-width:1100px;margin:0 auto;}
-.premium-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px;}
-.premium-item{border-radius:4px;overflow:hidden;background:#f5f3ef;}
-.premium-item img{width:100%;display:block;transition:transform .5s var(--ease-out);}
-.premium-item:hover img{transform:scale(1.03);}
-
-/* LAYOUT (단지배치도) */
-.layout-sec{background:#f7f5f1;padding:100px 48px;}
-.layout-inner{max-width:1100px;margin:0 auto;}
-.layout-tabs{display:flex;gap:0;margin-bottom:32px;border-bottom:1px solid #ddd;}
-.layout-tab{padding:12px 32px;font-size:13px;font-weight:700;color:#999;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;letter-spacing:.04em;}
-.layout-tab.active{color:var(--navy-dark);border-bottom-color:var(--gold);}
-.layout-panel{display:none;}
-.layout-panel.active{display:block;}
-.layout-panel img{width:100%;border-radius:4px;box-shadow:0 4px 24px rgba(0,0,0,.1);}
-
-/* UNIT (평면도) */
-.unit-sec{background:#fff;padding:100px 48px;}
-.unit-inner{max-width:1100px;margin:0 auto;}
-.unit-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;}
-.unit-tab{padding:10px 28px;font-size:13px;font-weight:700;color:#999;background:#f5f3ef;border:1px solid #e0ddd6;border-radius:2px;cursor:pointer;transition:all .2s;letter-spacing:.04em;}
-.unit-tab.active{background:var(--navy-dark);color:#fff;border-color:var(--navy-dark);}
-.unit-panel{display:none;}
-.unit-panel.active{display:block;}
-.unit-panel img{width:100%;max-width:800px;margin:0 auto;border-radius:4px;box-shadow:0 4px 24px rgba(0,0,0,.1);}
-
-/* NOTICE */
-.notice-sec{background:#f7f5f1;padding:80px 48px;}
-.notice-inner{max-width:1100px;margin:0 auto;}
-.notice-img{margin-top:40px;border-radius:4px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.12);}
-.notice-img img{width:100%;}
-
-/* CONTACT */
-.contact{background:#fff;padding:100px 48px;}
-.contact-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start;}
-.contact-item{margin-bottom:24px;}
-.contact-item-label{font-size:11px;color:var(--gold);font-weight:700;letter-spacing:.1em;margin-bottom:6px;}
-.contact-item-value{font-size:14px;color:#333;line-height:1.8;}
-.contact-map-links{display:flex;gap:8px;margin-top:8px;}
-.contact-map-link{font-size:12px;color:var(--navy);border:1px solid #ccc;padding:4px 12px;border-radius:2px;transition:all .2s;}
-.contact-map-link:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
-.contact-tel-big{font-size:28px;font-weight:900;color:var(--navy-dark);letter-spacing:.02em;}
-.contact-map{border-radius:4px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.1);}
-.contact-map img{width:100%;}
-
-/* CONSULT */
-.consult{background:var(--navy-dark);padding:80px 48px;}
-.consult-inner{max-width:800px;margin:0 auto;}
-.consult-heading{text-align:center;color:#fff;font-size:28px;font-weight:900;margin-bottom:8px;}
-.consult-sub{text-align:center;color:rgba(255,255,255,.45);font-size:13px;margin-bottom:44px;letter-spacing:.05em;}
-.consult-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.form-group{display:flex;flex-direction:column;gap:5px;}
-.form-group.full{grid-column:1/-1;}
-.form-label{font-size:11px;color:rgba(255,255,255,.45);letter-spacing:.06em;}
-.form-input,.form-select,.form-textarea{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:3px;padding:13px 15px;color:#fff;font-size:14px;font:inherit;outline:none;transition:border-color .2s;width:100%;}
-.form-input::placeholder,.form-textarea::placeholder{color:rgba(255,255,255,.22);}
-.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--gold);}
-.form-select{appearance:none;cursor:pointer;}
-.form-select option{background:#0b1f3a;color:#fff;}
-.form-textarea{resize:none;height:90px;}
-.form-submit{grid-column:1/-1;background:var(--gold);color:var(--navy-dark);border:none;border-radius:3px;padding:17px;font-size:15px;font-weight:900;cursor:pointer;letter-spacing:.08em;transition:background .2s;}
-.form-submit:hover{background:var(--gold-light);}
-.form-status{grid-column:1/-1;text-align:center;font-size:13px;color:var(--gold);min-height:18px;}
-.form-privacy{grid-column:1/-1;text-align:center;font-size:11px;color:rgba(255,255,255,.25);line-height:1.7;}
-.honeypot{display:none;}
-
-/* FOOTER */
-.footer{background:#02080e;padding:40px 48px;text-align:center;}
-.footer-name{color:rgba(255,255,255,.75);font-size:14px;font-weight:700;margin-bottom:12px;letter-spacing:.06em;}
-.footer-info{color:rgba(255,255,255,.32);font-size:12px;line-height:2.1;}
-.footer-copy{color:rgba(255,255,255,.18);font-size:11px;margin-top:16px;}
-
-/* FLOAT */
-.float-btn{position:fixed;bottom:30px;right:28px;z-index:90;}
-.float-tel{display:flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:var(--gold);color:var(--navy-dark);font-size:22px;box-shadow:0 4px 20px rgba(0,0,0,.4);transition:transform .2s;}
-.float-tel:hover{transform:translateY(-3px);}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out);}
-.reveal.active{opacity:1;transform:none;}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .nav{padding:0 20px;height:60px;}
-  .nav-menu{display:none;}
-  .hero-title img{max-height:90px;}
-  .concept{padding:70px 24px;}
-  .concept-inner{grid-template-columns:1fr;gap:40px;}
-  .sec-title{font-size:26px;}
-  .biz-grid{grid-template-columns:1fr;}
-  .premium-grid{grid-template-columns:1fr 1fr;}
-  .contact-inner{grid-template-columns:1fr;gap:40px;}
-  .business,.location,.premium,.layout-sec,.unit-sec,.notice-sec,.contact,.consult{padding:70px 24px;}
-  .loc-slide{height:450px;}
-  .loc-slide-heading{font-size:26px;}
-  .consult-form{grid-template-columns:1fr;}
-  .form-group.full,.form-submit,.form-status,.form-privacy{grid-column:1;}
-  .footer{padding:32px 20px;}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  color: var(--gray-700);
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
-@media(max-width:600px){
-  .premium-grid{grid-template-columns:1fr;}
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+button { border: none; background: none; cursor: pointer; font: inherit; }
+
+/* ══════════════════════════════
+   NAV
+══════════════════════════════ */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 72px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 60px;
+  transition: background .4s, backdrop-filter .4s, box-shadow .4s;
+}
+.nav.scrolled {
+  background: rgba(7, 17, 30, .94);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(255,255,255,.06);
+}
+.nav-brand {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.nav-brand-sub {
+  font-size: 9px; letter-spacing: .22em; color: var(--gold); font-weight: 500; text-transform: uppercase;
+}
+.nav-brand-name {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 14px; font-weight: 700; color: #fff; letter-spacing: .04em;
+}
+.nav-center {
+  display: flex; gap: 2px; position: absolute; left: 50%; transform: translateX(-50%);
+}
+.nav-center a {
+  padding: 8px 14px;
+  font-size: 12px; font-weight: 500; letter-spacing: .06em;
+  color: rgba(255,255,255,.55);
+  transition: color .2s;
+}
+.nav-center a:hover { color: var(--gold); }
+.nav-cta {
+  display: flex; align-items: center; gap: 16px;
+}
+.nav-tel-label { font-size: 10px; letter-spacing: .12em; color: rgba(255,255,255,.4); font-weight: 400; }
+.nav-tel-num {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 18px; font-weight: 700; color: var(--gold); letter-spacing: .04em;
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.hero {
+  position: relative; height: 100svh; min-height: 640px;
+  overflow: hidden; background: var(--navy-deep);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background: url('https://www.sky-honorsville.co.kr/img/main/main_n4.png') center top / cover no-repeat;
+  transform-origin: center;
+  animation: heroZoom 14s var(--ease) forwards;
+}
+@keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+.hero-grad {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(7,17,30,.1) 0%,
+    rgba(7,17,30,.15) 40%,
+    rgba(7,17,30,.6) 75%,
+    rgba(7,17,30,.92) 100%
+  );
+}
+.hero-body {
+  position: absolute; bottom: 13%; left: 0; right: 0;
+  text-align: center; padding: 0 24px;
+}
+.hero-eyebrow {
+  font-size: 11px; letter-spacing: .28em; color: var(--gold);
+  font-weight: 500; margin-bottom: 28px; text-transform: uppercase;
+  opacity: 0; animation: fadeUp .9s .3s var(--ease) forwards;
+}
+.hero-title {
+  margin: 0 auto 28px;
+  opacity: 0; animation: fadeUp .9s .55s var(--ease) forwards;
+}
+.hero-title img { margin: 0 auto; max-height: 128px; filter: drop-shadow(0 8px 32px rgba(0,0,0,.55)); }
+.hero-desc {
+  font-size: 14px; letter-spacing: .1em; color: rgba(255,255,255,.65);
+  margin-bottom: 44px;
+  opacity: 0; animation: fadeUp .9s .75s var(--ease) forwards;
+}
+.hero-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--gold); color: var(--navy-deep);
+  font-size: 13px; font-weight: 700; letter-spacing: .12em;
+  padding: 16px 52px; border-radius: 1px;
+  transition: background .25s, transform .25s;
+  opacity: 0; animation: fadeUp .9s .9s var(--ease) forwards;
+}
+.hero-btn:hover { background: var(--gold-lt); transform: translateY(-2px); }
+.hero-scroll-line {
+  position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: rgba(255,255,255,.3); font-size: 9px; letter-spacing: .2em;
+  padding-bottom: 32px;
+  opacity: 0; animation: fadeIn 1.2s 1.4s ease forwards;
+}
+.hero-scroll-line::after {
+  content: ''; width: 1px; height: 56px;
+  background: linear-gradient(to bottom, rgba(255,255,255,.35), transparent);
+}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* ══════════════════════════════
+   SECTION COMMONS
+══════════════════════════════ */
+.sec { padding: 140px 60px; }
+.sec-inner { max-width: 1160px; margin: 0 auto; }
+.sec-header { margin-bottom: 72px; }
+.sec-kicker {
+  font-size: 10px; letter-spacing: .26em; color: var(--gold);
+  font-weight: 700; margin-bottom: 16px; text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+}
+.sec-kicker::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+.sec-h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 40px; font-weight: 700; line-height: 1.28;
+  color: var(--navy); letter-spacing: -.01em;
+}
+.sec-h2.wh { color: #fff; }
+.sec-sub {
+  margin-top: 20px; font-size: 14px; color: var(--gray-500);
+  line-height: 2; max-width: 480px; word-break: keep-all;
+}
+
+/* ══════════════════════════════
+   CONCEPT
+══════════════════════════════ */
+.concept { background: #fff; }
+.concept-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 100px; align-items: center;
+}
+.concept-copy { }
+.concept-heading {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 34px; font-weight: 700;
+  line-height: 1.7; color: var(--navy);
+  letter-spacing: -.01em; word-break: keep-all;
+  margin-bottom: 36px;
+}
+.concept-heading em { color: var(--gold); font-style: normal; }
+.concept-body { font-size: 14px; color: var(--gray-500); line-height: 2.1; word-break: keep-all; }
+.concept-photos {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.concept-photo {
+  overflow: hidden; border-radius: 2px;
+  aspect-ratio: 3/4.5;
+}
+.concept-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }
+.concept-photo:hover img { transform: scale(1.04); }
+
+/* ══════════════════════════════
+   BUSINESS
+══════════════════════════════ */
+.business { background: var(--off-white); }
+.biz-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 72px; align-items: start;
+}
+.biz-photo { border-radius: 2px; overflow: hidden; box-shadow: 0 24px 60px rgba(0,0,0,.1); }
+.biz-photo img { width: 100%; }
+.biz-table { width: 100%; border-collapse: collapse; }
+.biz-table tr { border-bottom: 1px solid rgba(0,0,0,.07); }
+.biz-table tr:first-child { border-top: 2px solid var(--gold); }
+.biz-table th {
+  width: 36%; padding: 16px 20px 16px 0;
+  font-size: 11px; letter-spacing: .06em; color: var(--gray-500);
+  font-weight: 600; text-align: left; vertical-align: top;
+  white-space: nowrap;
+}
+.biz-table td {
+  padding: 16px 0; font-size: 14px; color: var(--navy);
+  line-height: 1.8; vertical-align: top;
+}
+.biz-table td strong { color: var(--gold); font-weight: 700; }
+
+/* ══════════════════════════════
+   LOCATION
+══════════════════════════════ */
+.location { background: var(--navy-deep); padding: 0; }
+.loc-nav {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.loc-nav-item {
+  padding: 24px 0; text-align: center;
+  font-size: 11px; letter-spacing: .16em; font-weight: 600;
+  color: rgba(255,255,255,.35); text-transform: uppercase;
+  cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all .25s;
+}
+.loc-nav-item.on { color: var(--gold); border-bottom-color: var(--gold); }
+.loc-panes { }
+.loc-pane {
+  display: none; position: relative; height: 620px;
+}
+.loc-pane.on { display: block; }
+.loc-pane-bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+}
+.loc-pane-veil {
+  position: absolute; inset: 0;
+  background: linear-gradient(105deg, rgba(7,17,30,.92) 0%, rgba(7,17,30,.5) 52%, rgba(7,17,30,.12) 100%);
+}
+.loc-pane-body {
+  position: absolute; top: 50%; left: 8%; transform: translateY(-50%);
+  color: #fff; max-width: 460px;
+}
+.loc-pane-en {
+  font-size: 9px; letter-spacing: .28em; color: var(--gold);
+  font-weight: 600; margin-bottom: 20px; text-transform: uppercase;
+  display: flex; align-items: center; gap: 10px;
+}
+.loc-pane-en::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+.loc-pane-h3 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 38px; font-weight: 700; line-height: 1.3;
+  margin-bottom: 24px; word-break: keep-all;
+}
+.loc-pane-desc { font-size: 14px; color: rgba(255,255,255,.65); line-height: 2.1; word-break: keep-all; }
+.loc-notice {
+  padding: 18px 60px; text-align: center;
+  color: rgba(255,255,255,.2); font-size: 11px; line-height: 2;
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+/* ══════════════════════════════
+   PREMIUM
+══════════════════════════════ */
+.premium { background: #fff; }
+.premium-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.prem-card {
+  overflow: hidden; border-radius: 2px;
+  background: var(--gray-100);
+}
+.prem-card img { width: 100%; display: block; transition: transform .7s var(--ease); }
+.prem-card:hover img { transform: scale(1.04); }
+
+/* ══════════════════════════════
+   LAYOUT (배치도)
+══════════════════════════════ */
+.layout-sec { background: var(--off-white); }
+.lt-tabs {
+  display: flex; gap: 0; margin-bottom: 48px;
+  border-bottom: 1px solid var(--gray-300);
+}
+.lt-tab {
+  padding: 14px 36px; font-size: 13px; font-weight: 600;
+  letter-spacing: .06em; color: var(--gray-500);
+  cursor: pointer; border-bottom: 2px solid transparent;
+  transition: all .2s;
+}
+.lt-tab.on { color: var(--navy); border-bottom-color: var(--gold); }
+.lt-panel { display: none; }
+.lt-panel.on { display: block; }
+.lt-panel img {
+  width: 100%; border-radius: 2px;
+  box-shadow: 0 16px 56px rgba(0,0,0,.09);
+}
+
+/* ══════════════════════════════
+   UNIT (평면도)
+══════════════════════════════ */
+.unit-sec { background: #fff; }
+.unit-tabs {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 52px;
+}
+.unit-tab {
+  padding: 11px 30px; font-size: 13px; font-weight: 600;
+  letter-spacing: .06em; color: var(--gray-500);
+  background: var(--gray-100); border: 1px solid var(--gray-300);
+  border-radius: 1px; cursor: pointer; transition: all .2s;
+}
+.unit-tab.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+.unit-panel { display: none; }
+.unit-panel.on { display: block; }
+.unit-panel img {
+  max-width: 780px; margin: 0 auto;
+  box-shadow: 0 16px 56px rgba(0,0,0,.09); border-radius: 2px;
+}
+
+/* ══════════════════════════════
+   CONTACT
+══════════════════════════════ */
+.contact { background: var(--off-white); }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1.4fr;
+  gap: 80px; align-items: start;
+}
+.contact-dl { display: flex; flex-direction: column; gap: 36px; }
+.contact-item {}
+.contact-dt {
+  font-size: 9px; letter-spacing: .22em; font-weight: 700;
+  color: var(--gold); margin-bottom: 10px; text-transform: uppercase;
+}
+.contact-dd { font-size: 14px; color: var(--navy); line-height: 1.8; }
+.contact-dd-tel {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 30px; font-weight: 700; color: var(--navy); letter-spacing: .02em;
+}
+.map-btns { display: flex; gap: 8px; margin-top: 10px; }
+.map-btn {
+  font-size: 11px; font-weight: 600; letter-spacing: .04em;
+  color: var(--navy); border: 1px solid var(--gray-300);
+  padding: 6px 16px; border-radius: 1px; transition: all .2s;
+}
+.map-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+.contact-map { border-radius: 2px; overflow: hidden; box-shadow: 0 16px 56px rgba(0,0,0,.1); }
+.contact-map img { width: 100%; }
+
+/* ══════════════════════════════
+   CONSULT FORM
+══════════════════════════════ */
+.consult { background: var(--navy); }
+.consult-inner { max-width: 760px; margin: 0 auto; }
+.consult-header { text-align: center; margin-bottom: 56px; }
+.consult-h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 34px; font-weight: 700; color: #fff;
+  letter-spacing: -.01em; margin-bottom: 12px;
+}
+.consult-sub { font-size: 13px; color: rgba(255,255,255,.38); letter-spacing: .06em; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fg { display: flex; flex-direction: column; gap: 8px; }
+.fg.full { grid-column: 1 / -1; }
+.fg label { font-size: 10px; letter-spacing: .14em; color: rgba(255,255,255,.4); font-weight: 600; text-transform: uppercase; }
+.fi {
+  width: 100%; background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1); border-radius: 1px;
+  padding: 15px 18px; color: #fff; font: inherit; font-size: 14px;
+  outline: none; transition: border-color .2s, background .2s;
+  appearance: none;
+}
+.fi::placeholder { color: rgba(255,255,255,.2); }
+.fi:focus { border-color: var(--gold); background: rgba(255,255,255,.07); }
+.fi option { background: var(--navy-mid); color: #fff; }
+textarea.fi { resize: none; height: 96px; }
+.form-submit {
+  grid-column: 1 / -1;
+  background: var(--gold); color: var(--navy-deep);
+  padding: 18px; border-radius: 1px;
+  font-size: 14px; font-weight: 700; letter-spacing: .1em;
+  transition: background .25s, transform .2s;
+}
+.form-submit:hover { background: var(--gold-lt); transform: translateY(-2px); }
+.form-status { grid-column: 1 / -1; text-align: center; font-size: 13px; color: var(--gold); min-height: 20px; margin-top: 4px; }
+.form-legal { grid-column: 1 / -1; text-align: center; font-size: 11px; color: rgba(255,255,255,.2); line-height: 1.8; }
+.hp { display: none; }
+
+/* ══════════════════════════════
+   FOOTER
+══════════════════════════════ */
+.footer { background: var(--navy-deep); padding: 60px 60px 48px; }
+.footer-inner { max-width: 1160px; margin: 0 auto; }
+.footer-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 36px; border-bottom: 1px solid rgba(255,255,255,.07);
+  margin-bottom: 32px;
+}
+.footer-brand {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px; font-weight: 700; color: rgba(255,255,255,.7);
+  letter-spacing: .02em;
+}
+.footer-tel {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 22px; font-weight: 700; color: var(--gold);
+}
+.footer-info {
+  font-size: 12px; color: rgba(255,255,255,.28);
+  line-height: 2.2; word-break: keep-all;
+}
+.footer-copy {
+  margin-top: 24px; font-size: 11px; color: rgba(255,255,255,.16);
+  display: flex; justify-content: space-between; align-items: flex-start;
+  flex-wrap: wrap; gap: 8px;
+}
+.footer-notice { font-size: 11px; color: rgba(255,255,255,.14); line-height: 1.8; }
+
+/* ══════════════════════════════
+   FLOAT
+══════════════════════════════ */
+.fab {
+  position: fixed; bottom: 32px; right: 32px; z-index: 150;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--gold); color: var(--navy-deep);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 8px 28px rgba(0,0,0,.38);
+  transition: transform .25s, box-shadow .25s;
+}
+.fab:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(0,0,0,.45); }
+
+/* ══════════════════════════════
+   REVEAL
+══════════════════════════════ */
+.rv { opacity: 0; transform: translateY(32px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.rv.on { opacity: 1; transform: none; }
+.rv.d1 { transition-delay: .12s; }
+.rv.d2 { transition-delay: .24s; }
+.rv.d3 { transition-delay: .36s; }
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 1024px) {
+  .nav-center { display: none; }
+  .sec { padding: 100px 40px; }
+  .concept-grid { gap: 60px; }
+  .concept-heading { font-size: 28px; }
+  .sec-h2 { font-size: 32px; }
+  .biz-layout { grid-template-columns: 1fr; gap: 48px; }
+  .loc-pane-h3 { font-size: 30px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 52px; }
+}
+@media (max-width: 768px) {
+  .nav { padding: 0 24px; }
+  .nav-brand-name { font-size: 12px; }
+  .nav-tel-num { font-size: 15px; }
+  .sec { padding: 80px 24px; }
+  .sec-header { margin-bottom: 48px; }
+  .sec-h2 { font-size: 26px; }
+  .concept-grid { grid-template-columns: 1fr; gap: 48px; }
+  .concept-heading { font-size: 24px; }
+  .loc-pane { height: 480px; }
+  .loc-pane-body { left: 6%; right: 6%; }
+  .loc-pane-h3 { font-size: 26px; }
+  .premium-mosaic { grid-template-columns: 1fr 1fr; }
+  .footer-top { flex-direction: column; gap: 16px; }
+  .footer { padding: 48px 24px 36px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .fg.full, .form-submit, .form-status, .form-legal { grid-column: 1; }
+}
+@media (max-width: 520px) {
+  .premium-mosaic { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-logo-text">대전 경남아너스빌<br>센텀스카이</div>
-  <div class="nav-right">
-    <nav class="nav-menu">
-      <a href="#business">사업안내</a>
-      <a href="#location">입지환경</a>
-      <a href="#premium">프리미엄</a>
-      <a href="#layout">단지안내</a>
-      <a href="#unit">세대안내</a>
-      <a href="#consult">상담신청</a>
-    </nav>
-    <a class="nav-tel" href="tel:15888766"><small>분양문의</small>1588-8766</a>
+<!-- ── NAV ─────────────────── -->
+<header class="nav" id="nav">
+  <div class="nav-brand">
+    <span class="nav-brand-sub">Gyeongnam Honorsville</span>
+    <span class="nav-brand-name">대전 경남아너스빌 센텀스카이 2</span>
   </div>
-</nav>
+  <nav class="nav-center">
+    <a href="#business">사업안내</a>
+    <a href="#location">입지환경</a>
+    <a href="#premium">프리미엄</a>
+    <a href="#layout">단지안내</a>
+    <a href="#unit">세대안내</a>
+    <a href="#consult">상담신청</a>
+  </nav>
+  <div class="nav-cta">
+    <span class="nav-tel-label">분양문의</span>
+    <a class="nav-tel-num" href="tel:15888766">1588-8766</a>
+  </div>
+</header>
 
-<!-- HERO -->
+<!-- ── HERO ─────────────────── -->
 <section class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-title reveal">
+  <div class="hero-grad"></div>
+  <div class="hero-body">
+    <p class="hero-eyebrow">대전 중심 · 더블역세권 · 명문학군 · 스카이 프리미엄</p>
+    <div class="hero-title">
       <img src="https://www.sky-honorsville.co.kr/img/main/main_title_n2.png" alt="대전 경남아너스빌 센텀스카이">
     </div>
-    <p class="hero-sub reveal">대전 중심 · 더블역세권 · 명문학군 · 스카이 프리미엄</p>
-    <a href="#consult" class="hero-cta reveal">분양 상담 신청</a>
+    <p class="hero-desc">Gyeongnam Honorsville Centum Sky · Daejeon</p>
+    <a href="#consult" class="hero-btn">분양 상담 신청</a>
   </div>
-  <div class="hero-scroll">SCROLL</div>
+  <div class="hero-scroll-line">SCROLL</div>
 </section>
 
-<!-- CONCEPT -->
-<section class="concept">
-  <div class="concept-inner">
-    <div class="concept-text reveal">
-      <p class="sec-label">Real 중심 라이프</p>
-      <h2 class="concept-heading">
-        가까이 걷다보면<br>더 <em>여유로운</em> 일상과 만나고<br><br>
-        멀리서 바라보면<br>더 <em>돋보이는</em> 높이에 놀라며<br><br>
-        내일을 살아보면<br>더 <em>오르는</em> 가치에 감탄하게 됩니다
-      </h2>
-      <div class="sec-divider"></div>
-      <p class="sec-desc">명문학군부터 교통, 문화, 자연까지<br>모든 것이 중심에 있는 아너스빌 센텀스카이.</p>
-    </div>
-    <div class="concept-images reveal">
-      <div class="concept-img">
-        <img src="https://www.sky-honorsville.co.kr/img/main/sec02_left_new.jpg" alt="">
+<!-- ── CONCEPT ─────────────── -->
+<section class="sec concept">
+  <div class="sec-inner">
+    <div class="concept-grid">
+      <div class="concept-copy rv">
+        <div class="sec-kicker">Real 중심 라이프</div>
+        <h2 class="concept-heading">
+          가까이 걷다보면<br>더 <em>여유로운</em> 일상과 만나고<br><br>
+          멀리서 바라보면<br>더 <em>돋보이는</em> 높이에 놀라며<br><br>
+          내일을 살아보면<br>더 <em>오르는</em> 가치에 감탄하게 됩니다
+        </h2>
+        <p class="concept-body">명문학군부터 교통, 문화, 자연까지<br>모든 것이 중심에 있는 아너스빌 센텀스카이.<br>대전의 심장부에서 시작되는 새로운 프리미엄 라이프.</p>
       </div>
-      <div class="concept-img">
-        <img src="https://www.sky-honorsville.co.kr/img/main/sec02_right_new.jpg" alt="">
+      <div class="concept-photos rv d1">
+        <div class="concept-photo">
+          <img src="https://www.sky-honorsville.co.kr/img/main/sec02_left_new.jpg" alt="">
+        </div>
+        <div class="concept-photo">
+          <img src="https://www.sky-honorsville.co.kr/img/main/sec02_right_new.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BUSINESS (사업개요) -->
-<section class="business" id="business">
-  <div class="business-inner">
-    <div class="reveal">
-      <p class="sec-label">사업안내</p>
-      <h2 class="sec-title">사업개요</h2>
-      <div class="sec-divider"></div>
+<!-- ── BUSINESS ─────────────── -->
+<section class="sec business" id="business">
+  <div class="sec-inner">
+    <div class="sec-header rv">
+      <div class="sec-kicker">사업안내</div>
+      <h2 class="sec-h2">사업개요</h2>
     </div>
-    <div class="biz-grid reveal">
-      <div class="biz-image">
+    <div class="biz-layout">
+      <div class="biz-photo rv">
         <img src="https://www.sky-honorsville.co.kr/img/sub/business01.png" alt="사업개요">
       </div>
-      <div>
+      <div class="rv d1">
         <table class="biz-table">
           <tr><th>사업명</th><td>대전 경남아너스빌 센텀스카이</td></tr>
           <tr><th>대지위치</th><td>대전광역시 중구 대흥동 38-17번지 일대</td></tr>
@@ -267,8 +572,8 @@ img{max-width:100%;display:block;}
           <tr><th>건폐율</th><td>72.8268% (법정 80%)</td></tr>
           <tr><th>용적률</th><td>944.5005% (법정 950%)</td></tr>
           <tr><th>건축규모</th><td>지하 3층 ~ 지상 29층, 35층</td></tr>
-          <tr><th>건축용도</th><td>공동주택(아파트) / 업무시설(오피스텔-주거형) / 근린생활시설(제1종)</td></tr>
-          <tr><th>총 세대수</th><td>아파트 142세대 · 오피스텔 48호실 · 근린생활시설 1호실</td></tr>
+          <tr><th>건축용도</th><td>공동주택(아파트) / 업무시설(오피스텔-주거형)<br>근린생활시설(제1종)</td></tr>
+          <tr><th>총 세대수</th><td>아파트 142세대 · 오피스텔 48호실</td></tr>
           <tr><th>시행사</th><td>탑스텐빌라드애월제주(주)</td></tr>
           <tr><th>시공사</th><td>경남기업(주)</td></tr>
           <tr><th>분양문의</th><td><strong>1588-8766</strong></td></tr>
@@ -278,312 +583,312 @@ img{max-width:100%;display:block;}
   </div>
 </section>
 
-<!-- LOCATION (입지환경) -->
+<!-- ── LOCATION ─────────────── -->
 <section class="location" id="location">
-  <div class="loc-tabs">
-    <div class="loc-tab active" data-index="0">Traffic</div>
-    <div class="loc-tab" data-index="1">Education</div>
-    <div class="loc-tab" data-index="2">Life</div>
-    <div class="loc-tab" data-index="3">Healing</div>
+  <div class="loc-nav">
+    <div class="loc-nav-item on" data-i="0">Traffic</div>
+    <div class="loc-nav-item" data-i="1">Education</div>
+    <div class="loc-nav-item" data-i="2">Life</div>
+    <div class="loc-nav-item" data-i="3">Healing</div>
   </div>
-  <div class="loc-slides">
-    <div class="loc-slide active">
-      <div class="loc-slide-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide01.jpg')"></div>
-      <div class="loc-slide-overlay"></div>
-      <div class="loc-slide-content">
-        <p class="loc-slide-en">Traffic</p>
-        <h3 class="loc-slide-heading">더블역세권으로<br><strong>빠른 이동</strong> 중심</h3>
-        <p class="loc-slide-desc">도보거리 보문산공원역(예정), 중앙로역과<br>가까운 판암IC, 대전역(KTX·SRT)으로<br>전국 어디든 빠르게 갑니다</p>
+  <div class="loc-panes">
+    <div class="loc-pane on">
+      <div class="loc-pane-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide01.jpg')"></div>
+      <div class="loc-pane-veil"></div>
+      <div class="loc-pane-body">
+        <p class="loc-pane-en">Traffic</p>
+        <h3 class="loc-pane-h3">더블역세권으로<br><strong>빠른 이동</strong> 중심</h3>
+        <p class="loc-pane-desc">도보거리 보문산공원역(예정), 중앙로역과<br>가까운 판암IC, 대전역(KTX·SRT)으로<br>전국 어디든 빠르게 갑니다</p>
       </div>
     </div>
-    <div class="loc-slide">
-      <div class="loc-slide-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide02.jpg')"></div>
-      <div class="loc-slide-overlay"></div>
-      <div class="loc-slide-content">
-        <p class="loc-slide-en">Education</p>
-        <h3 class="loc-slide-heading">명문학군으로<br><strong>주목받는</strong> 중심</h3>
-        <p class="loc-slide-desc">대흥초, 대전중·고교, 대전여중 등<br>학업성취도가 높은 명문학군으로<br>걱정 없는 교육 환경입니다</p>
+    <div class="loc-pane">
+      <div class="loc-pane-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide02.jpg')"></div>
+      <div class="loc-pane-veil"></div>
+      <div class="loc-pane-body">
+        <p class="loc-pane-en">Education</p>
+        <h3 class="loc-pane-h3">명문학군으로<br><strong>주목받는</strong> 중심</h3>
+        <p class="loc-pane-desc">대흥초, 대전중·고교, 대전여중 등<br>학업성취도가 높은 명문학군으로<br>걱정 없는 교육 환경입니다</p>
       </div>
     </div>
-    <div class="loc-slide">
-      <div class="loc-slide-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide03.jpg')"></div>
-      <div class="loc-slide-overlay"></div>
-      <div class="loc-slide-content">
-        <p class="loc-slide-en">Life</p>
-        <h3 class="loc-slide-heading">한걸음에<br><strong>다 누리는</strong> 중심</h3>
-        <p class="loc-slide-desc">대전 핵심 상권인 으능정이거리와 중앙시장,<br>NC백화점, 대전성모병원 등<br>모든 일상이 다채로워집니다</p>
+    <div class="loc-pane">
+      <div class="loc-pane-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide03.jpg')"></div>
+      <div class="loc-pane-veil"></div>
+      <div class="loc-pane-body">
+        <p class="loc-pane-en">Life</p>
+        <h3 class="loc-pane-h3">한걸음에<br><strong>다 누리는</strong> 중심</h3>
+        <p class="loc-pane-desc">대전 핵심 상권인 으능정이거리와 중앙시장,<br>NC백화점, 대전성모병원 등<br>모든 일상이 다채로워집니다</p>
       </div>
     </div>
-    <div class="loc-slide">
-      <div class="loc-slide-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide04.jpg')"></div>
-      <div class="loc-slide-overlay"></div>
-      <div class="loc-slide-content">
-        <p class="loc-slide-en">Healing</p>
-        <h3 class="loc-slide-heading">집 앞 공원에서<br><strong>힐링하는</strong> 중심</h3>
-        <p class="loc-slide-desc">대전천 수변산책길, 테마공원, 보문산 등<br>365일 풍부한 자연을 가까이 마주합니다</p>
+    <div class="loc-pane">
+      <div class="loc-pane-bg" style="background-image:url('https://www.sky-honorsville.co.kr/img/main/sec02_slide04.jpg')"></div>
+      <div class="loc-pane-veil"></div>
+      <div class="loc-pane-body">
+        <p class="loc-pane-en">Healing</p>
+        <h3 class="loc-pane-h3">집 앞 공원에서<br><strong>힐링하는</strong> 중심</h3>
+        <p class="loc-pane-desc">대전천 수변산책길, 테마공원, 보문산 등<br>365일 풍부한 자연을 가까이 마주합니다</p>
       </div>
     </div>
   </div>
   <div class="loc-notice">
-    ※ 본 홈페이지의 CG 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.&nbsp;&nbsp;
-    ※ 일부 영상 및 이미지는 AI 기술을 활용해 제작된 것으로 실제와 다를 수 있습니다.
+    ※ 본 홈페이지의 CG 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.
+    &nbsp;·&nbsp; ※ 일부 영상 및 이미지는 AI 기술을 활용해 제작된 것으로 실제와 다를 수 있습니다.
   </div>
 </section>
 
-<!-- PREMIUM -->
-<section class="premium" id="premium">
-  <div class="premium-inner">
-    <div class="reveal">
-      <p class="sec-label">Premium</p>
-      <h2 class="sec-title">프리미엄</h2>
-      <div class="sec-divider"></div>
+<!-- ── PREMIUM ─────────────── -->
+<section class="sec premium" id="premium">
+  <div class="sec-inner">
+    <div class="sec-header rv">
+      <div class="sec-kicker">Premium</div>
+      <h2 class="sec-h2">프리미엄</h2>
     </div>
-    <div class="premium-grid reveal">
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium01_n.png" alt="프리미엄 1"></div>
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium02_n.png" alt="프리미엄 2"></div>
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium03_n.png" alt="프리미엄 3"></div>
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium04_n.png" alt="프리미엄 4"></div>
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium05_n.png" alt="프리미엄 5"></div>
-      <div class="premium-item"><img src="https://www.sky-honorsville.co.kr/img/sub/premium06_n.png" alt="프리미엄 6"></div>
+    <div class="premium-mosaic">
+      <div class="prem-card rv"><img src="https://www.sky-honorsville.co.kr/img/sub/premium01_n.png" alt="프리미엄 1"></div>
+      <div class="prem-card rv d1"><img src="https://www.sky-honorsville.co.kr/img/sub/premium02_n.png" alt="프리미엄 2"></div>
+      <div class="prem-card rv d2"><img src="https://www.sky-honorsville.co.kr/img/sub/premium03_n.png" alt="프리미엄 3"></div>
+      <div class="prem-card rv d1"><img src="https://www.sky-honorsville.co.kr/img/sub/premium04_n.png" alt="프리미엄 4"></div>
+      <div class="prem-card rv d2"><img src="https://www.sky-honorsville.co.kr/img/sub/premium05_n.png" alt="프리미엄 5"></div>
+      <div class="prem-card rv d3"><img src="https://www.sky-honorsville.co.kr/img/sub/premium06_n.png" alt="프리미엄 6"></div>
     </div>
   </div>
 </section>
 
-<!-- LAYOUT (단지배치도) -->
-<section class="layout-sec" id="layout">
-  <div class="layout-inner">
-    <div class="reveal">
-      <p class="sec-label">단지안내</p>
-      <h2 class="sec-title">단지배치도</h2>
-      <div class="sec-divider"></div>
+<!-- ── LAYOUT ─────────────── -->
+<section class="sec layout-sec" id="layout">
+  <div class="sec-inner">
+    <div class="sec-header rv">
+      <div class="sec-kicker">단지안내</div>
+      <h2 class="sec-h2">단지배치도</h2>
     </div>
-    <div class="reveal">
-      <div class="layout-tabs">
-        <div class="layout-tab active" data-panel="layout1">단지배치도</div>
-        <div class="layout-tab" data-panel="layout2">동호수 배치도</div>
+    <div class="rv d1">
+      <div class="lt-tabs">
+        <div class="lt-tab on" data-p="lp1">단지배치도</div>
+        <div class="lt-tab" data-p="lp2">동호수 배치도</div>
       </div>
-      <div class="layout-panel active" id="layout1">
+      <div class="lt-panel on" id="lp1">
         <img src="https://www.sky-honorsville.co.kr/img/sub/layout01_n.jpg" alt="단지배치도">
       </div>
-      <div class="layout-panel" id="layout2">
+      <div class="lt-panel" id="lp2">
         <img src="https://www.sky-honorsville.co.kr/img/sub/layout02_n.jpg" alt="동호수 배치도">
       </div>
     </div>
   </div>
 </section>
 
-<!-- UNIT (평면도) -->
-<section class="unit-sec" id="unit">
-  <div class="unit-inner">
-    <div class="reveal">
-      <p class="sec-label">세대안내</p>
-      <h2 class="sec-title">평면정보</h2>
-      <div class="sec-divider"></div>
+<!-- ── UNIT ─────────────────── -->
+<section class="sec unit-sec" id="unit">
+  <div class="sec-inner">
+    <div class="sec-header rv">
+      <div class="sec-kicker">세대안내</div>
+      <h2 class="sec-h2">평면정보</h2>
     </div>
-    <div class="reveal">
+    <div class="rv d1">
       <div class="unit-tabs">
-        <div class="unit-tab active" data-panel="unit84A">84A</div>
-        <div class="unit-tab" data-panel="unit84B">84B</div>
-        <div class="unit-tab" data-panel="unit84C">84C</div>
-        <div class="unit-tab" data-panel="unit103O">103O</div>
-        <div class="unit-tab" data-panel="unit109O">109O</div>
+        <div class="unit-tab on" data-p="u84A">84A</div>
+        <div class="unit-tab" data-p="u84B">84B</div>
+        <div class="unit-tab" data-p="u84C">84C</div>
+        <div class="unit-tab" data-p="u103O">103O</div>
+        <div class="unit-tab" data-p="u109O">109O</div>
       </div>
-      <div class="unit-panel active" id="unit84A"><img src="https://www.sky-honorsville.co.kr/img/sub/84A_n2.jpg" alt="84A 평면도"></div>
-      <div class="unit-panel" id="unit84B"><img src="https://www.sky-honorsville.co.kr/img/sub/84B_n2.jpg" alt="84B 평면도"></div>
-      <div class="unit-panel" id="unit84C"><img src="https://www.sky-honorsville.co.kr/img/sub/84C_n2.jpg" alt="84C 평면도"></div>
-      <div class="unit-panel" id="unit103O"><img src="https://www.sky-honorsville.co.kr/img/sub/103O_n2.jpg" alt="103O 평면도"></div>
-      <div class="unit-panel" id="unit109O"><img src="https://www.sky-honorsville.co.kr/img/sub/109O_n2.jpg" alt="109O 평면도"></div>
+      <div class="unit-panel on" id="u84A"><img src="https://www.sky-honorsville.co.kr/img/sub/84A_n2.jpg" alt="84A 평면도"></div>
+      <div class="unit-panel" id="u84B"><img src="https://www.sky-honorsville.co.kr/img/sub/84B_n2.jpg" alt="84B 평면도"></div>
+      <div class="unit-panel" id="u84C"><img src="https://www.sky-honorsville.co.kr/img/sub/84C_n2.jpg" alt="84C 평면도"></div>
+      <div class="unit-panel" id="u103O"><img src="https://www.sky-honorsville.co.kr/img/sub/103O_n2.jpg" alt="103O 평면도"></div>
+      <div class="unit-panel" id="u109O"><img src="https://www.sky-honorsville.co.kr/img/sub/109O_n2.jpg" alt="109O 평면도"></div>
     </div>
   </div>
 </section>
 
-<!-- NOTICE (분양안내) -->
-<section class="notice-sec" id="notice">
-  <div class="notice-inner">
-    <div class="reveal">
-      <p class="sec-label">분양안내</p>
-      <h2 class="sec-title">모집공고</h2>
-      <div class="sec-divider"></div>
+<!-- ── CONTACT ─────────────── -->
+<section class="sec contact" id="contact">
+  <div class="sec-inner">
+    <div class="sec-header rv">
+      <div class="sec-kicker">Contact</div>
+      <h2 class="sec-h2">오시는 길</h2>
     </div>
-    <div class="notice-img reveal">
-      <img src="https://www.sky-honorsville.co.kr/img/sub/notice_a.png" alt="모집공고">
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-inner reveal">
-    <div>
-      <p class="sec-label">CONTACT</p>
-      <h2 class="sec-title">오시는 길</h2>
-      <div class="sec-divider"></div>
-      <div class="contact-item">
-        <p class="contact-item-label">분양사무실</p>
-        <p class="contact-item-value">대전 중구 대흥로175번길 25, 3층</p>
-        <div class="contact-map-links">
-          <a class="contact-map-link" href="https://naver.me/x9VhskyK" target="_blank">네이버지도</a>
-          <a class="contact-map-link" href="https://kko.to/d3XwOXv4hT" target="_blank">카카오맵</a>
+    <div class="contact-grid">
+      <div class="contact-dl rv">
+        <div class="contact-item">
+          <p class="contact-dt">분양사무실</p>
+          <p class="contact-dd">대전 중구 대흥로175번길 25, 3층</p>
+          <div class="map-btns">
+            <a class="map-btn" href="https://naver.me/x9VhskyK" target="_blank">네이버지도</a>
+            <a class="map-btn" href="https://kko.to/d3XwOXv4hT" target="_blank">카카오맵</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <p class="contact-dt">현장</p>
+          <p class="contact-dd">대전 중구 대흥동 38-17</p>
+          <div class="map-btns">
+            <a class="map-btn" href="https://naver.me/xZKqWgQw" target="_blank">네이버지도</a>
+            <a class="map-btn" href="https://kko.to/XokuP801jb" target="_blank">카카오맵</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <p class="contact-dt">분양문의</p>
+          <a class="contact-dd-tel" href="tel:15888766">1588-8766</a>
         </div>
       </div>
-      <div class="contact-item">
-        <p class="contact-item-label">현장</p>
-        <p class="contact-item-value">대전 중구 대흥동 38-17</p>
-        <div class="contact-map-links">
-          <a class="contact-map-link" href="https://naver.me/xZKqWgQw" target="_blank">네이버지도</a>
-          <a class="contact-map-link" href="https://kko.to/XokuP801jb" target="_blank">카카오맵</a>
+      <div class="contact-map rv d1">
+        <img src="https://www.sky-honorsville.co.kr/img/main/sec04_map_n5.png" alt="오시는 길 지도">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONSULT ─────────────── -->
+<section class="sec consult" id="consult">
+  <div class="sec-inner">
+    <div class="consult-inner">
+      <div class="consult-header rv">
+        <h2 class="consult-h2">방문예약 · 상담신청</h2>
+        <p class="consult-sub">소중한 문의를 남겨주시면 담당자가 빠르게 연락드립니다</p>
+      </div>
+      <form class="form-grid rv d1" data-project="경남아너스빌 센텀스카이 2">
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off">
+        <div class="fg">
+          <label>이름 *</label>
+          <input class="fi" type="text" name="name" placeholder="성함을 입력해 주세요" required>
         </div>
-      </div>
-      <div class="contact-item">
-        <p class="contact-item-label">분양문의</p>
-        <a class="contact-tel-big" href="tel:15888766">1588-8766</a>
-      </div>
-    </div>
-    <div class="contact-map">
-      <img src="https://www.sky-honorsville.co.kr/img/main/sec04_map_n5.png" alt="오시는 길 지도">
+        <div class="fg">
+          <label>연락처 *</label>
+          <input class="fi" type="tel" name="phone" placeholder="010-0000-0000" required>
+        </div>
+        <div class="fg">
+          <label>관심 평형</label>
+          <select class="fi" name="unit">
+            <option value="">선택해 주세요</option>
+            <option>84A㎡</option>
+            <option>84B㎡</option>
+            <option>84C㎡</option>
+            <option>103O㎡ (오피스텔)</option>
+            <option>109O㎡ (오피스텔)</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>방문 희망일</label>
+          <input class="fi" type="date" name="visitDate">
+        </div>
+        <div class="fg full">
+          <label>문의사항</label>
+          <textarea class="fi" name="message" placeholder="궁금하신 사항을 자유롭게 작성해 주세요"></textarea>
+        </div>
+        <button class="form-submit" type="submit">상담 신청하기</button>
+        <p class="form-status"></p>
+        <p class="form-legal">위 정보는 상담 목적으로만 활용되며, 관련 법령에 따라 보호됩니다.</p>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- CONSULT FORM -->
-<section class="consult" id="consult">
-  <div class="consult-inner">
-    <h2 class="consult-heading reveal">방문예약 / 상담신청</h2>
-    <p class="consult-sub reveal">소중한 문의를 남겨주시면 담당자가 빠르게 연락드립니다</p>
-    <form class="consult-form" data-project="경남아너스빌 센텀스카이 2">
-      <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off">
-      <div class="form-group">
-        <label class="form-label">이름 *</label>
-        <input class="form-input" type="text" name="name" placeholder="성함을 입력해 주세요" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">연락처 *</label>
-        <input class="form-input" type="tel" name="phone" placeholder="010-0000-0000" required>
-      </div>
-      <div class="form-group">
-        <label class="form-label">관심 평형</label>
-        <select class="form-select" name="unit">
-          <option value="">선택해 주세요</option>
-          <option>84A㎡</option>
-          <option>84B㎡</option>
-          <option>84C㎡</option>
-          <option>103O㎡ (오피스텔)</option>
-          <option>109O㎡ (오피스텔)</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label">방문 희망일</label>
-        <input class="form-input" type="date" name="visitDate">
-      </div>
-      <div class="form-group full">
-        <label class="form-label">문의사항</label>
-        <textarea class="form-textarea" name="message" placeholder="궁금하신 사항을 자유롭게 작성해 주세요"></textarea>
-      </div>
-      <button class="form-submit" type="submit">상담 신청하기</button>
-      <p class="form-status"></p>
-      <p class="form-privacy">위 정보는 상담 목적으로만 활용되며, 관련 법령에 따라 보호됩니다.</p>
-    </form>
-  </div>
-</section>
-
-<!-- FOOTER -->
+<!-- ── FOOTER ─────────────── -->
 <footer class="footer">
-  <p class="footer-name">대전 경남아너스빌 센텀스카이</p>
-  <p class="footer-info">
-    분양사무실 : 대전 중구 대흥로175번길 25, 3층&nbsp;&nbsp;|&nbsp;&nbsp;문의 : 1588-8766<br>
-    시행 : 탑스텐빌라드애월제주(주)&nbsp;&nbsp;|&nbsp;&nbsp;시공 : 경남기업(주)<br>
-    광고주 : (주)다호&nbsp;&nbsp;|&nbsp;&nbsp;대표 : 최재호&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 829-88-02090
-  </p>
-  <p class="footer-copy">COPYRIGHT © 2026. 대전 경남아너스빌 센텀스카이. ALL RIGHTS RESERVED.</p>
-  <p class="footer-copy" style="margin-top:10px;font-size:10px;">
-    ※ 본 홈페이지의 CG 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.&nbsp;
-    ※ 개발계획은 관계기관 사정에 의해 변경될 수 있습니다.
-  </p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <p class="footer-brand">대전 경남아너스빌 센텀스카이 2</p>
+      <a class="footer-tel" href="tel:15888766">1588-8766</a>
+    </div>
+    <p class="footer-info">
+      분양사무실 : 대전 중구 대흥로175번길 25, 3층 &nbsp;|&nbsp; 문의 : 1800-3688<br>
+      시행 : 탑스텐빌라드애월제주(주) &nbsp;|&nbsp; 시공 : 경남기업(주)<br>
+      광고주 : (주)다호 &nbsp;|&nbsp; 대표 : 최재호
+    </p>
+    <div class="footer-copy">
+      <span>COPYRIGHT © 2026. 대전 경남아너스빌 센텀스카이 2. ALL RIGHTS RESERVED.</span>
+      <span class="footer-notice">
+        ※ 본 홈페이지의 CG 및 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.<br>
+        ※ 개발계획은 관계기관 사정에 의해 변경될 수 있습니다.
+      </span>
+    </div>
+  </div>
 </footer>
 
-<!-- FLOAT -->
-<div class="float-btn">
-  <a class="float-tel" href="tel:15888766" title="전화 상담">📞</a>
-</div>
+<!-- ── FLOAT ─────────────── -->
+<a class="fab" href="tel:15888766" title="전화 상담">📞</a>
 
 <script>
-(function(){
-  var ENDPOINT='https://script.google.com/macros/s/AKfycbzXiCO-C1RmUXb96X-Cx8bluQzdhWhGZDrT5ECLGosPDD4_sX8irZmu4pZ3veovgEOa/exec';
+(function () {
+  var EP = 'https://script.google.com/macros/s/AKfycbzXiCO-C1RmUXb96X-Cx8bluQzdhWhGZDrT5ECLGosPDD4_sX8irZmu4pZ3veovgEOa/exec';
 
-  // 입지 탭
-  document.querySelectorAll('.loc-tab').forEach(function(tab){
-    tab.addEventListener('click',function(){
-      var idx=parseInt(this.dataset.index);
-      document.querySelectorAll('.loc-tab').forEach(function(t){t.classList.remove('active');});
-      document.querySelectorAll('.loc-slide').forEach(function(s){s.classList.remove('active');});
-      this.classList.add('active');
-      document.querySelectorAll('.loc-slide')[idx].classList.add('active');
+  /* NAV 스크롤 */
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  /* 입지 탭 */
+  document.querySelectorAll('.loc-nav-item').forEach(function (el) {
+    el.addEventListener('click', function () {
+      var i = this.dataset.i;
+      document.querySelectorAll('.loc-nav-item').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.loc-pane').forEach(function (x) { x.classList.remove('on'); });
+      this.classList.add('on');
+      document.querySelectorAll('.loc-pane')[i].classList.add('on');
     });
   });
 
-  // 단지배치도 탭
-  document.querySelectorAll('.layout-tab').forEach(function(tab){
-    tab.addEventListener('click',function(){
-      document.querySelectorAll('.layout-tab').forEach(function(t){t.classList.remove('active');});
-      document.querySelectorAll('.layout-panel').forEach(function(p){p.classList.remove('active');});
-      this.classList.add('active');
-      document.getElementById(this.dataset.panel).classList.add('active');
+  /* 단지배치도 탭 */
+  document.querySelectorAll('.lt-tab').forEach(function (el) {
+    el.addEventListener('click', function () {
+      document.querySelectorAll('.lt-tab').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.lt-panel').forEach(function (x) { x.classList.remove('on'); });
+      this.classList.add('on');
+      document.getElementById(this.dataset.p).classList.add('on');
     });
   });
 
-  // 평면도 탭
-  document.querySelectorAll('.unit-tab').forEach(function(tab){
-    tab.addEventListener('click',function(){
-      document.querySelectorAll('.unit-tab').forEach(function(t){t.classList.remove('active');});
-      document.querySelectorAll('.unit-panel').forEach(function(p){p.classList.remove('active');});
-      this.classList.add('active');
-      document.getElementById(this.dataset.panel).classList.add('active');
+  /* 평면도 탭 */
+  document.querySelectorAll('.unit-tab').forEach(function (el) {
+    el.addEventListener('click', function () {
+      document.querySelectorAll('.unit-tab').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.unit-panel').forEach(function (x) { x.classList.remove('on'); });
+      this.classList.add('on');
+      document.getElementById(this.dataset.p).classList.add('on');
     });
   });
 
-  // 폼 제출
-  document.addEventListener('DOMContentLoaded',function(){
-    var form=document.querySelector('.consult-form');
-    if(!form) return;
-    var status=form.querySelector('.form-status');
-    form.addEventListener('submit',function(e){
+  /* 폼 */
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.querySelector('.form-grid');
+    if (!form) return;
+    var status = form.querySelector('.form-status');
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if(form.querySelector('.honeypot').value) return;
-      var btn=form.querySelector('.form-submit');
-      btn.disabled=true; btn.textContent='전송 중...';
-      if(status) status.textContent='';
-      var fd=new FormData(form);
-      fd.append('project',form.dataset.project||'경남아너스빌 센텀스카이 2');
-      fd.append('timestamp',new Date().toLocaleString('ko-KR'));
-      fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:fd})
-        .then(function(){
+      if (form.querySelector('.hp').value) return;
+      var btn = form.querySelector('.form-submit');
+      btn.disabled = true; btn.textContent = '전송 중...';
+      if (status) status.textContent = '';
+      var fd = new FormData(form);
+      fd.append('project', form.dataset.project || '경남아너스빌 센텀스카이 2');
+      fd.append('timestamp', new Date().toLocaleString('ko-KR'));
+      fetch(EP, { method: 'POST', mode: 'no-cors', body: fd })
+        .then(function () {
           form.reset();
-          if(window.wcs){if(!wcs_add)var wcs_add={};wcs_add['wa']='';var _conv={};_conv.type='lead';wcs.trans(_conv);}
-          if(status) status.textContent='상담신청이 접수되었습니다. 담당자가 순차 연락드립니다.';
-          btn.disabled=false; btn.textContent='상담 신청하기';
+          if (window.wcs) { if (!wcs_add) var wcs_add = {}; wcs_add['wa'] = ''; var _conv = {}; _conv.type = 'lead'; wcs.trans(_conv); }
+          if (status) status.textContent = '상담신청이 접수되었습니다. 담당자가 순차 연락드립니다.';
+          btn.disabled = false; btn.textContent = '상담 신청하기';
         })
-        .catch(function(){
-          if(status) status.textContent='오류가 발생했습니다. 전화로 문의해 주세요.';
-          btn.disabled=false; btn.textContent='상담 신청하기';
+        .catch(function () {
+          if (status) status.textContent = '오류가 발생했습니다. 전화로 문의해 주세요.';
+          btn.disabled = false; btn.textContent = '상담 신청하기';
         });
     });
-    document.querySelectorAll('input[type="date"]').forEach(function(el){
-      el.addEventListener('click',function(){try{this.showPicker();}catch(e){}});
-      el.style.cursor='pointer';
+    document.querySelectorAll('input[type="date"]').forEach(function (el) {
+      el.addEventListener('click', function () { try { this.showPicker(); } catch (e) { } });
+      el.style.cursor = 'pointer';
     });
   });
 
-  // Reveal
-  var els=document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting){en.target.classList.add('active');io.unobserve(en.target);}
+  /* Reveal */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('on'); io.unobserve(en.target); }
       });
-    },{threshold:0.1});
-    els.forEach(function(el){io.observe(el);});
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
   } else {
-    els.forEach(function(el){el.classList.add('active');});
+    document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('on'); });
   }
 })();
 </script>
